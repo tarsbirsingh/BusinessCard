@@ -2,7 +2,8 @@
     <string name="app_name">Business Card</string>
     <string name="name">Tarsbir Singh</string>
     <string name="skill">Android Developer</string>
-    <string name="address">Amritsar,Punjab,India</string>
+    <string name="contactTime">Contact:- 9AM to 6PM (Mon-Fri) </string>
     <string name="gMail">tarsbirsingh@gmail.com</string>
-    <string name="phone">9878285824</string>
+    <string name="web">https://www.linkedin.com/in/tarsbir-singh/</string>
+    <string name="phone">+919878285824</string>
 </resources>

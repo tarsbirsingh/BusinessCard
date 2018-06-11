@@ -1,93 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
-<RelativeLayout
-    android:id="@+id/relativeOne"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:contentDescription="@string/gMail"
-        android:paddingTop="0dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/d8" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/h1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:src="@drawable/photo"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp" />
-
-    <TextView
-        android:id="@+id/nameView"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/h1"
-        android:layout_centerHorizontal="true"
-        android:text="@string/name"
-        android:textColor="@android:color/white"
-        android:textSize="32sp" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/skillView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/nameView"
-        android:layout_centerHorizontal="true"
-        android:text="@string/skill"
-        android:textColor="@android:color/white"
-        android:textSize="24sp" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginTop="300dp"
-        android:background="@android:color/white">
+        <RelativeLayout
+            android:id="@+id/relativeOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/addressView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="64dp"
-            android:layout_marginStart="80dp"
-            android:text="@string/address"
-            android:textSize="22sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/three_zero_zero_margin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/gMail"
+                android:paddingTop="@dimen/zero_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/d8" />
 
-        <TextView
-            android:id="@+id/phoneView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="118dp"
-            android:layout_marginStart="80dp"
-            android:text="@string/phone"
-            android:textSize="22sp" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/h1"
+                android:layout_width="@dimen/one_five_zero_margin"
+                android:layout_height="@dimen/one_five_zero_margin"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/three_six_margin"
+                android:src="@drawable/photo"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="@dimen/two_margin" />
 
-        <TextView
-            android:id="@+id/gMailView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="150dp"
-            android:layout_marginStart="80dp"
-            android:text="@string/gMail"
-            android:textSize="22sp" />
+            <TextView
+                android:id="@+id/nameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/h1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/three_twoSp" />
 
-    </RelativeLayout>
-</RelativeLayout>
+            <TextView
+                android:id="@+id/skillView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameView"
+                android:layout_centerHorizontal="true"
+                android:text="@string/skill"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_two_Sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/three_five_zero_margin"
+            android:layout_marginTop="@dimen/zero_margin"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/eight_zero_margin"
+                android:layout_marginTop="@dimen/eight_zero_margin"
+                android:text="@string/phone"
+                android:autoLink="phone"
+                android:textSize="@dimen/one_sixSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/eight_zero_margin"
+                android:layout_marginTop="@dimen/two_zero_margin"
+                android:autoLink="email"
+                android:text="@string/gMail"
+                android:textSize="@dimen/one_sixSp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/eight_zero_margin"
+                android:layout_marginTop="@dimen/two_zero_margin"
+                android:text="@string/web"
+                android:autoLink="web"
+                android:textSize="@dimen/one_sixSp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/eight_zero_margin"
+                android:layout_marginTop="@dimen/two_zero_margin"
+                android:text="@string/contactTime"
+                android:textSize="@dimen/one_sixSp" />
+
+        </LinearLayout>
+    </LinearLayout>
 </ScrollView>
