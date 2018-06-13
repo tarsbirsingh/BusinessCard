@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <RelativeLayout
-            android:id="@+id/relativeOne"
+            android:id="@+id/relative_One"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -38,7 +38,7 @@
                 app:civ_border_width="@dimen/two_margin" />
 
             <TextView
-                android:id="@+id/nameView"
+                android:id="@+id/name_View"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/h1"
@@ -48,10 +48,10 @@
                 android:textSize="@dimen/three_twoSp" />
 
             <TextView
-                android:id="@+id/skillView"
+                android:id="@+id/skill_View"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/nameView"
+                android:layout_below="@id/name_View"
                 android:layout_centerHorizontal="true"
                 android:text="@string/skill"
                 android:textColor="@android:color/white"
